@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manasi Mehta</title>
+  <!--Font Awesome Icons-->
+  <link rel="stylesheet" href="./css/all/css/all.css">
+  <!-- every thing on all sites-->
+  <link rel="stylesheet" href="./css/allthings.css">
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="./css/aos.css">
+  <!-- Custom Style -->
+  <link rel="stylesheet" href="./css/Style.css">
+  <link rel="stylesheet" href="./css/passportstyles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/logo.jpg" sizes="16x16 32x32" type="image/jpg">
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-menu flex-row">
+      <div class="nav-brand">
+        <a href="#" class="text-gray">First draft</a>
+      </div>
+      <div class="toggle-collapse">
+        <div class="toggle-icons">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+      <div>
+        <ul class="nav-items">
+          <li class="nav-link">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav-link">
+            <a href="passport.html">Travel Passport</a>
+          </li>
+          <li class="nav-link">
+            <a href="gallery.html">Projects</a>
+          </li>
+          <li class="nav-link">
+            <a href="about.html">About</a>
+          </li>
+          <li class="nav-link">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social text-gray">
+        <a href="https://www.instagram.com/m4nasi/"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/m4nasi"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/m4nasi"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+  <!--Site Title -->
+    <section class="site-title">
+      <div class="site-background" data-aos="fade-up" data-aos-delay="300">
+      </div>
+    </section>
+  </main>
+
+  <section class="map-code">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {
+        'packages':['geochart'],
+        // Note: you will need to get a mapsApiKey for your project.
+        // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+        'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+      });
+      google.charts.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+        var data = google.visualization.arrayToDataTable([
+          ["Country","Name","Visited"],
+          ["AF","Afghanistan",0],
+          ["AL","Albania",0],
+          ["DZ","Algeria",0],
+          ["AS","American Samoa",0],
+          ["AD","Andorra",0],
+          ["AO","Angola",0],
+          ["AI","Anguilla",0],
+          ["AQ","Antarctica",0],
+          ["AG","Antigua and Barbuda",0],
+          ["AR","Argentina",0],
+          ["AM","Armenia",0],
+          ["AW","Aruba",0],
+          ["AU","Australia",0],
+          ["AT","Austria",0],
+          ["AZ","Azerbaijan",0],
+          ["BS","Bahamas",0],
+          ["BH","Bahrain",0],
+          ["BD","Bangladesh",0],
+          ["BB","Barbados",0],
+          ["BY","Belarus",0],
+          ["BE","Belgium",0],
+          ["BZ","Belize",0],
+          ["BJ","Benin",0],
+          ["BM","Bermuda",0],
+          ["BT","Bhutan",0],
+          ["BO","Bolivia, Plurinational State of",0],
+          ["BQ","Bonaire, Sint Eustatius and Saba",0],
+          ["BA","Bosnia and Herzegovina",0],
+          ["BW","Botswana",0],
+          ["BV","Bouvet Island",0],
+          ["BR","Brazil",0],
+          ["IO","British Indian Ocean Territory",0],
+          ["BN","Brunei Darussalam",0],
+          ["BG","Bulgaria",0],
+          ["BF","Burkina Faso",0],
+          ["BI","Burundi",0],
+          ["KH","Cambodia",0],
+          ["CM","Cameroon",0],
+          ["CA","Canada",0],
+          ["CV","Cape Verde",0],
+          ["KY","Cayman Islands",0],
+          ["CF","Central African Republic",0],
+          ["TD","Chad",0],
+          ["CL","Chile",0],
+          ["CN","China",0],
+          ["CX","Christmas Island",0],
+          ["CC","Cocos (Keeling) Islands",0],
+          ["CO","Colombia",0],
+          ["KM","Comoros",0],
+          ["CG","Congo",0],
+          ["CD","Congo, The Democratic Republic of the",0],
+          ["CK","Cook Islands",0],
+          ["CR","Costa Rica",0],
+          ["HR","Croatia",0],
+          ["CU","Cuba",0],
+          ["CW","Curao",0],
+          ["CY","Cyprus",0],
+          ["CZ","Czech Republic",0],
+          ["DK","Denmark",0],
+          ["DJ","Djibouti",0],
+          ["DM","Dominica",0],
+          ["DO","Dominican Republic",0],
+          ["EC","Ecuador",0],
+          ["EG","Egypt",0],
+          ["SV","El Salvador",0],
+          ["GQ","Equatorial Guinea",0],
+          ["ER","Eritrea",0],
+          ["EE","Estonia",0],
+          ["ET","Ethiopia",0],
+          ["FK","Falkland Islands (Malvinas)",0],
+          ["FO","Faroe Islands",0],
+          ["FJ","Fiji",0],
+          ["FI","Finland",0],
+          ["FR","France",1],
+          ["GF","French Guiana",0],
+          ["PF","French Polynesia",0],
+          ["TF","French Southern Territories",0],
+          ["GA","Gabon",0],
+          ["GM","Gambia",0],
+          ["GE","Georgia",0],
+          ["DE","Germany",1],
+          ["GH","Ghana",0],
+          ["GI","Gibraltar",1],
+          ["GR","Greece",0],
+          ["GL","Greenland",0],
+          ["GD","Grenada",0],
+          ["GP","Guadeloupe",0],
+          ["GU","Guam",0],
+          ["GT","Guatemala",0],
+          ["GG","Guernsey",0],
+          ["GN","Guinea",0],
+          ["GW","Guinea-Bissau",0],
+          ["GY","Guyana",0],
+          ["HT","Haiti",0],
+          ["HM","Heard Island and Mcdonald Islands",0],
+          ["VA","Holy See (Vatican City State)",0],
+          ["HN","Honduras",0],
+          ["HK","Hong Kong",0],
+          ["HU","Hungary",0],
+          ["IS","Iceland",0],
+          ["IN","India",1],
+          ["ID","Indonesia",0],
+          ["IR","Iran, Islamic Republic of",0],
+          ["IQ","Iraq",0],
+          ["IE","Ireland",0],
+          ["IM","Isle of Man",0],
+          ["IL","Israel",0],
+          ["IT","Italy",0],
+          ["JM","Jamaica",0],
+          ["JP","Japan",0],
+          ["JE","Jersey",0],
+          ["JO","Jordan",0],
+          ["KZ","Kazakhstan",0],
+          ["KE","Kenya",0],
+          ["KI","Kiribati",0],
+          ["KR","Korea, Republic of",0],
+          ["KW","Kuwait",0],
+          ["KG","Kyrgyzstan",0],
+          ["LV","Latvia",0],
+          ["LB","Lebanon",0],
+          ["LS","Lesotho",0],
+          ["LR","Liberia",0],
+          ["LY","Libya",0],
+          ["LI","Liechtenstein",0],
+          ["LT","Lithuania",0],
+          ["LU","Luxembourg",0],
+          ["MO","Macao",0],
+          ["MK","Macedonia, The former Yugoslav Republic of",0],
+          ["MG","Madagascar",0],
+          ["MW","Malawi",0],
+          ["MY","Malaysia",0],
+          ["MV","Maldives",1],
+          ["ML","Mali",0],
+          ["MT","Malta",0],
+          ["MH","Marshall Islands",0],
+          ["MQ","Martinique",0],
+          ["MR","Mauritania",0],
+          ["MU","Mauritius",0],
+          ["YT","Mayotte",0],
+          ["MX","Mexico",0],
+          ["FM","Micronesia, Federated States of",0],
+          ["MD","Moldova, Republic of",0],
+          ["MC","Monaco",1],
+          ["MN","Mongolia",0],
+          ["ME","Montenegro",0],
+          ["MS","Montserrat",0],
+          ["MA","Morocco",0],
+          ["MZ","Mozambique",0],
+          ["MM","Myanmar",0],
+          ["NA","Namibia",0],
+          ["NR","Nauru",0],
+          ["NP","Nepal",0],
+          ["NL","Netherlands",0],
+          ["NC","New Caledonia",0],
+          ["NZ","New Zealand",0],
+          ["NI","Nicaragua",0],
+          ["NE","Niger",0],
+          ["NG","Nigeria",0],
+          ["NU","Niue",0],
+          ["NF","Norfolk Island",0],
+          ["MP","Northern Mariana Islands",0],
+          ["NO","Norway",1],
+          ["OM","Oman",0],
+          ["PK","Pakistan",0],
+          ["PW","Palau",0],
+          ["PS","Palestine, State of",0],
+          ["PA","Panama",0],
+          ["PG","Papua New Guinea",0],
+          ["PY","Paraguay",0],
+          ["PE","Peru",0],
+          ["PH","Philippines",0],
+          ["PN","Pitcairn",0],
+          ["PL","Poland",0],
+          ["PT","Portugal",0],
+          ["PR","Puerto Rico",0],
+          ["QA","Qatar",0],
+          ["RE","Runion",0],
+          ["RO","Romania",0],
+          ["RU","Russian Federation",0],
+          ["RW","Rwanda",0],
+          ["BL","Saint Barthlemy",0],
+          ["SH","Saint Helena, Ascension and Tristan da Cunha",0],
+          ["KN","Saint Kitts and Nevis",0],
+          ["LC","Saint Lucia",0],
+          ["MF","Saint Martin (French Part)",0],
+          ["PM","Saint Pierre and Miquelon",0],
+          ["VC","Saint Vincent and the Grenadines",0],
+          ["WS","Samoa",0],
+          ["SM","San Marino",0],
+          ["ST","Sao Tome and Principe",0],
+          ["SA","Saudi Arabia",0],
+          ["SN","Senegal",0],
+          ["RS","Serbia",0],
+          ["SC","Seychelles",0],
+          ["SL","Sierra Leone",0],
+          ["SG","Singapore",0],
+          ["SX","Sint Maarten (Dutch Part)",0],
+          ["SK","Slovakia",0],
+          ["SI","Slovenia",0],
+          ["SB","Solomon Islands",0],
+          ["SO","Somalia",0],
+          ["ZA","South Africa",0],
+          ["GS","South Georgia and the South Sandwich Islands",0],
+          ["SS","South Sudan",0],
+          ["ES","Spain",1],
+          ["LK","Sri Lanka",0],
+          ["SD","Sudan",0],
+          ["SR","Suriname",0],
+          ["SJ","Svalbard and Jan Mayen",0],
+          ["SZ","Swaziland",0],
+          ["SE","Sweden",0],
+          ["CH","Switzerland",1],
+          ["SY","Syrian Arab Republic",0],
+          ["TW","Taiwan, Province of China",0],
+          ["TJ","Tajikistan",0],
+          ["TZ","Tanzania, United Republic of",0],
+          ["TH","Thailand",0],
+          ["TL","Timor-Leste",0],
+          ["TG","Togo",0],
+          ["TK","Tokelau",0],
+          ["TO","Tonga",0],
+          ["TT","Trinidad and Tobago",0],
+          ["TN","Tunisia",0],
+          ["TR","Turkey",0],
+          ["TM","Turkmenistan",0],
+          ["TC","Turks and Caicos Islands",0],
+          ["TV","Tuvalu",0],
+          ["UG","Uganda",0],
+          ["UA","Ukraine",0],
+          ["AE","United Arab Emirates",0],
+          ["GB","United Kingdom",1],
+          ["US","United States",0],
+          ["UM","United States Minor Outlying Islands",0],
+          ["UY","Uruguay",0],
+          ["UZ","Uzbekistan",0],
+          ["VU","Vanuatu",0],
+          ["VE","Venezuela, Bolivarian Republic of",0],
+          ["VN","Vietnam",0],
+          ["VG","Virgin Islands, British",0],
+          ["VI","Virgin Islands, U.S.",0],
+          ["WF","Wallis and Futuna",0],
+          ["EH","Western Sahara",0],
+          ["YE","Yemen",0],
+          ["ZM","Zambia",0],
+          ["ZW","Zimbabwe",0],
+
+        ]);
+
+        var options = {
+        //  {enable: true, zoomFactor: 5.0}
+          // colorAxis: {colors: ['#add8e6', 'black', '#e31b23']},
+          colorAxis: {colors: ['#104f55', '#013220']},
+          // backgroundColor: '#121212',
+          // datalessRegionColor: '#f8bbd0',
+          defaultColor: '#add8e6',
+          sizeAxis: {minValue:0, maxValue: 1},
+          enableRegionInteractivity : true,
+          legend: 'none'
+        };
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </section>
+
+  <section class="map">
+    <br><br><br>
+    <h2>World locations</h2>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+    <br><br><br>
+  </section>
+
+  <section class="carousel">
+    <script src="js/jssor.slider-28.0.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.jssor_1_slider_init = function() {
+        var jssor_1_options = {
+          $AutoPlay: 1,
+          $AutoPlaySteps: 5,
+          $SlideDuration: 160,
+          $SlideWidth: 250,
+          $SlideSpacing: 3
+        };
+
+        var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+        /*#region responsive code begin*/
+
+        var MAX_WIDTH = 1000;
+        function ScaleSlider() {
+          var containerElement = jssor_1_slider.$Elmt.parentNode;
+          var containerWidth = containerElement.clientWidth;
+
+            if (containerWidth) {
+              var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+              jssor_1_slider.$ScaleWidth(expectedWidth);
+            }
+            else {
+              window.setTimeout(ScaleSlider, 30);
+            }
+          }
+
+          ScaleSlider();
+
+          $Jssor$.$AddEvent(window, "load", ScaleSlider);
+          $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+          $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+          /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+      /*jssor slider loading skin spin css*/
+      .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      @keyframes jssorl-009-spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      figure {
+        float: right;
+        width: 30%;
+        text-align: center;
+        font-style: italic;
+        font-size: smaller;
+        text-indent: 0;
+        border: thin silver solid;
+        margin: 0.5em;
+        padding: 0.5em;
+        font-family: cursive;
+      }
+    </style>
+    <h2>Bucket list destinations</h2>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1000px;height:300px;overflow:hidden;visibility:hidden;">
+      <!-- Loading Screen -->
+      <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+        <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+      </div>
+      <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1000px;height:300px;overflow:hidden;">
+        <div data-fillmode="2">
+          <figure>
+            <img data-u="image" src="./assets/new-york.jpg">
+            <figcaption>New York</figcaption>
+          </figure>
+        </div>
+        <div data-fillmode="2">
+          <figure>
+            <img data-u="image" src="./assets/venice.jpg">
+            <figcaption>Venice</figcaption>
+          </figure>
+        </div>
+        <div data-fillmode="2">
+          <figure>
+            <img data-u="image" src="./assets/northern.jpg">
+            <figcaption>Northern Lights</figcaption>
+          </figure>
+        </div>
+        <div data-fillmode="2">
+          <figure>
+            <img data-u="image" src="./assets/athens.jpg">
+            <figcaption>Athens</figcaption>
+          </figure>
+        </div>
+        <div data-fillmode="2">
+          <figure>
+            <img data-u="image" src="./assets/santorini.jpg">
+            <figcaption>Santorini</figcaption>
+          </figure>
+        </div>
+        <div data-fillmode="2">
+          <figure>
+            <img data-u="image" src="./assets/new-zealand.jpg">
+            <figcaption>New Zealand</figcaption>
+          </figure>
+        </div>
+        <div data-fillmode="2">
+          <figure>
+            <img data-u="image" src="./assets/rome.jpg">
+            <figcaption>Rome</figcaption>
+          </figure>
+        </div>
+        <div data-fillmode="2">
+          <figure>
+            <img data-u="image" src="./assets/machu-picchu.jpg">
+            <figcaption>Machu Picchu</figcaption>
+          </figure>
+        </div>
+        <div data-fillmode="2">
+          <figure>
+            <img data-u="image" src="./assets/como.jpg">
+            <figcaption>Como</figcaption>
+          </figure>
+        </div>
+        <div data-fillmode="2">
+          <figure>
+            <img data-u="image" src="./assets/australia.jpg">
+            <figcaption>Australia</figcaption>
+          </figure>
+        </div>
+        <div data-fillmode="2">
+          <figure>
+            <img data-u="image" src="./assets/canada.jpg">
+            <figcaption>Canada</figcaption>
+          </figure>
+        </div>
+        <div data-fillmode="2">
+          <figure>
+            <img data-u="image" src="./assets/zambia.jpg">
+            <figcaption>Zambia</figcaption>
+          </figure>
+        </div>
+      </div>
+      <a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">design web</a>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+      <!-- #endregion Jssor Slider End -->
+  </section>
+
+      <section class="photo-grid">
+        <div class="grid-container">
+          <h2><span>Top </span>Destinations</h2>
+          <div class="content">
+             <div class="wrapper">
+               <div class="box vintage">
+                 <img class="box-img" src="./assets/berlin_1.jpg" alt="insta4">
+               </div>
+            </div>
+            <div class="wrapper">
+              <div class="box vintage">
+                <img class="box-img" src="./assets/berlin_2.jpg" alt="insta4">
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="box vintage">
+                <img class="box-img" src="./assets/berlin_3.jpg" alt="insta4">
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="box vintage">
+                <img class="box-img" src="./assets/berlin_4.jpg" alt="insta4">
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="box vintage">
+                <img class="box-img" src="./assets/berlin_5.jpg" alt="insta4">
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="box vintage">
+                <img class="box-img" src="./assets/berlin_6.jpg" alt="insta4">
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="box vintage">
+                <img class="box-img" src="./assets/berlin_1.jpg" alt="insta4">
+              </div>
+           </div>
+           <div class="wrapper">
+             <div class="box vintage">
+               <img class="box-img" src="./assets/berlin_2.jpg" alt="insta4">
+             </div>
+           </div>
+           <div class="wrapper">
+             <div class="box vintage">
+               <img class="box-img" src="./assets/berlin_3.jpg" alt="insta4">
+             </div>
+           </div>
+           <div class="wrapper">
+             <div class="box vintage">
+               <img class="box-img" src="./assets/berlin_4.jpg" alt="insta4">
+             </div>
+           </div>
+           <div class="wrapper">
+             <div class="box vintage">
+               <img class="box-img" src="./assets/berlin_5.jpg" alt="insta4">
+             </div>
+           </div>
+           <div class="wrapper">
+             <div class="box vintage">
+               <img class="box-img" src="./assets/berlin_6.jpg" alt="insta4">
+             </div>
+           </div>
+          </div>
+        </div>
+      </section>
+
+      <style>
+        .photo-grid .grid-container h2{
+            padding-top: 2rem;
+            padding-left: 5rem;
+          }
+
+          .photo-grid .grid-container span{
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+          }
+
+          * {
+            box-sizing: border-box;
+          }
+
+          .grid-container {
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 4px;
+            margin: 0 auto;
+            padding: 40px 0;
+          }
+
+          .content {
+            display: flex;
+            flex-wrap: wrap;
+
+            padding: 0 30px;
+          }
+
+          .wrapper {
+            width: 33.3%;
+            height: 100%;
+            padding: 10px;
+          }
+
+          .box {
+            position: relative;
+            max-height: 300px;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow:
+            0 1.4px 1.7px rgba(0, 0, 0, 0.017),
+            0 3.3px 4px rgba(0, 0, 0, 0.024),
+            0 6.3px 7.5px rgba(0, 0, 0, 0.03),
+            0 11.2px 13.4px rgba(0, 0, 0, 0.036),
+            0 20.9px 25.1px rgba(0, 0, 0, 0.043),
+            0 50px 60px rgba(0, 0, 0, 0.06);
+          }
+
+          .box-img {
+            position:relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            transition: all .3s ease-in-out;
+          }
+
+
+          @media screen and (max-width: 880px) {
+            .wrapper {
+              width: 50%;
+            }
+          }
+
+          @media screen and (max-width: 520px) {
+            .wrapper {
+              width: 100%;
+            }
+          }
+      </style>
+
+      <!-- Footer Section -->
+      <footer>
+        <div class="container">
+          <div class="row">
+             <div class="col-md-12 col-sm-12">
+                <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
+                   <p>Copyright &copy; 2021 Manasi Mehta
+                </div>
+                <ul class="wow fadeInUp social-icon" data-wow-delay="2s">
+                  <li><a href="https://www.instagram.com/m4nasi/" class="fab fa-instagram"></a></li>
+                  <li><a href="https://twitter.com/m4nasi" class="fab fa-twitter"></a></li>
+                  <li><a href="https://github.com/m4nasi" class="fab fa-github"></a></li>
+                  <li><a href="https://www.linkedin.com/in/manasi-mehta-2454901b2" class="fab fa-linkedin"></a></li>
+                </ul>
+             </div>
+          </div>
+      </div>
+      <div class="move-up">
+        <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+      </div>
+    </footer>
+  <!--x Footer-->
+  <!-- Jquery Library file -->
+  <script src="./js/Jquery3.4.1.min.js"></script>
+  <!-- Owl-Carousel js-->
+  <script src="./js/owl.carousel.min.js"></script>
+  <!-- AOS js Library-->
+  <script src="./js/aos.js"></script>
+  <!--Custom Javascript file-->
+  <script src="./js/main.js"></script>
+</body>
+</html>

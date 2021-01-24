@@ -1,0 +1,31 @@
+main .site-title{
+  background: url('../assets/blog-top-image.jpg');
+  background-size: cover;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+
+.map h2{
+  padding-left: 5rem;
+}
+
+.map .regions_div{
+  padding-left: 5rem;
+}
+
+.map {
+position: relative;
+padding-top: 30px;
+overflow: hidden;
+}
+
+.map iframe,
+.map object,
+.map embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+}

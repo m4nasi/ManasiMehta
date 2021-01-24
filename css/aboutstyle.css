@@ -1,0 +1,91 @@
+/*
+main .postcard .postcardimg{
+  padding-top: 2rem;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+  align-items: center;
+}
+
+main .carousel .span{
+  font-family: var(--Cursive);
+}
+
+main .carousel .h2{
+  text-align: center;
+}
+*/
+.postcard h2,
+.carousel h2,
+.photo-grid h2{
+  padding-left: 5rem;
+}
+
+.postcard .postcardimg{
+  padding-left: 5rem;
+  padding-bottom: 0.5rem;
+}
+
+/*
+.card_1 .flex-row{
+  padding-left: 5rem;
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding: 0 30px;
+}
+
+.wrapper {
+  width: 33.3%;
+  height: 100%;
+  padding: 10px;
+}
+
+.box {
+  position: relative;
+  max-height: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow:
+  0 1.4px 1.7px rgba(0, 0, 0, 0.017),
+  0 3.3px 4px rgba(0, 0, 0, 0.024),
+  0 6.3px 7.5px rgba(0, 0, 0, 0.03),
+  0 11.2px 13.4px rgba(0, 0, 0, 0.036),
+  0 20.9px 25.1px rgba(0, 0, 0, 0.043),
+  0 50px 60px rgba(0, 0, 0, 0.06);
+}
+
+.box-img {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all .3s ease-in-out;
+}
+
+
+@media screen and (max-width: 880px) {
+  .wrapper {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .wrapper {
+    width: 100%;
+  }
+}
